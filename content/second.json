@@ -1,0 +1,4 @@
+[
+  { "type": "text", "props": { "text": "Hello World" } },
+  { "type": "teaser", "props": { "text": "hello Kunoline" } }
+]
