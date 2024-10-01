@@ -12,9 +12,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div>
       <ul>
         {links.map((l) => (
-          <Link key={l.path} href={l.path}>
-            {l.label}
-          </Link>
+          <li>
+            <Link key={l.path} href={l.path}>
+              {l.label}
+            </Link>
+          </li>
         ))}
       </ul>
       {children}

@@ -11,7 +11,9 @@ interface Personalization {
 }
 
 const personalizations: Personalization[] = [];
-(window as any).perso = personalizations;
+if (typeof window !== 'undefined') {
+  (window as any).perso = personalizations;
+}
 
 export const Interactivity = (props: {
   path: string;
